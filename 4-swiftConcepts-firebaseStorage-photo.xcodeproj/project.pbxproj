@@ -11,6 +11,7 @@
 		64B45FB72A87685700694C7C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B45FB62A87685700694C7C /* ContentView.swift */; };
 		64B45FB92A87685900694C7C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B45FB82A87685900694C7C /* Assets.xcassets */; };
 		64B45FBD2A87685900694C7C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64B45FBC2A87685900694C7C /* Preview Assets.xcassets */; };
+		64B45FC42A877C4500694C7C /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64B45FC32A877C4500694C7C /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		64B45FB82A87685900694C7C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64B45FBA2A87685900694C7C /* __swiftConcepts_firebaseStorage_photo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = __swiftConcepts_firebaseStorage_photo.entitlements; sourceTree = "<group>"; };
 		64B45FBC2A87685900694C7C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		64B45FC32A877C4500694C7C /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				64B45FB42A87685700694C7C /* __swiftConcepts_firebaseStorage_photoApp.swift */,
 				64B45FB62A87685700694C7C /* ContentView.swift */,
+				64B45FC32A877C4500694C7C /* ImagePicker.swift */,
 				64B45FB82A87685900694C7C /* Assets.xcassets */,
 				64B45FBA2A87685900694C7C /* __swiftConcepts_firebaseStorage_photo.entitlements */,
 				64B45FBB2A87685900694C7C /* Preview Content */,
@@ -139,6 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64B45FC42A877C4500694C7C /* ImagePicker.swift in Sources */,
 				64B45FB72A87685700694C7C /* ContentView.swift in Sources */,
 				64B45FB52A87685700694C7C /* __swiftConcepts_firebaseStorage_photoApp.swift in Sources */,
 			);
