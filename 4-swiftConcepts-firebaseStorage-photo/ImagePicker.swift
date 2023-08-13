@@ -11,7 +11,8 @@ import SwiftUI
 
 struct ImagePicker: UIViewControllerRepresentable {
     
-    @Binding var selectedImage: UIImage? 
+    @Binding var selectedImage: UIImage?
+    @Binding var isPickerShowing: Bool 
     
     func makeUIViewController(context: Context) -> some UIViewController {
         
@@ -53,11 +54,17 @@ class Coordinator: NSObject, UIImagePickerControllerDelegate, UINavigationContro
             }
         }
         
+        // Dismiss the picker
+        parent.isPickerShowing = false
+        
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
         // Run code when the user has cancelled the picker UI
         print("cancelled")
+        
+        // Dismiss the picker
+        parent.isPickerShowing = false
     }
     
 }

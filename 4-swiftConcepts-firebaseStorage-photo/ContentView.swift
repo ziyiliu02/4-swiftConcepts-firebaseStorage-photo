@@ -32,7 +32,7 @@ struct ContentView: View {
         }
         .sheet(isPresented: $isPickerShowing, onDismiss: nil) {
             // Image picker
-            ImagePicker(selectedImage: $selectedImage)
+            ImagePicker(selectedImage: $selectedImage, isPickerShowing: $isPickerShowing)
         }
         
     }
