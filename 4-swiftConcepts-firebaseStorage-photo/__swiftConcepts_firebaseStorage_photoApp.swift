@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Firebase
 
 @main
 struct __swiftConcepts_firebaseStorage_photoApp: App {
@@ -13,5 +14,9 @@ struct __swiftConcepts_firebaseStorage_photoApp: App {
         WindowGroup {
             ContentView()
         }
+    }
+    
+    init() {
+        FirebaseApp.configure()
     }
 }
