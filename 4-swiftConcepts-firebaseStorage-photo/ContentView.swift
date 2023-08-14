@@ -7,6 +7,7 @@
 
 import SwiftUI
 import FirebaseStorage
+import FirebaseFirestore
 
 struct ContentView: View {
     
@@ -67,7 +68,8 @@ struct ContentView: View {
         }
         
         // Specify the file path and name
-        let fileRef = storageRef.child("images/\(UUID().uuidString).jpg")
+        let path = "images/\(UUID().uuidString).jpg"
+        let fileRef = storageRef.child(path)
         
         // Upload that data
         let uploadTask = fileRef.putData(imageData!, metadata: nil) { metadata, error in
@@ -75,7 +77,9 @@ struct ContentView: View {
             // Check for errors
             if error == nil && metadata != nil {
                 
-                // TODO: Save a reference to the file in Firestore DB 
+                // Save a reference to the file in Firestore DB
+                let db = Firestore.firestore()
+                db.collection("images").document().setData(["url":path])
             }
         }
         
